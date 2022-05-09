@@ -36,16 +36,16 @@ extern const action_t fn_actions[];
  */
 #define KEYMAP_ENC( \
 	K00, K01, K02, K03,    \
-	K10, K11, K12, K13,    \
+	     K11, K12, K13,    \
 	K20, K21, K22,         \
-	K30, K31, K32, K33,    \
-	K40, K42,              \
+	K30, K31, K32,    \
+	K40,           K43,  \
 	R0P, R0N, K44\
 ) { \
-	{ K00, K01, K02, K03,   KC_NO }, \
-	{ K10, K11, K12, K13,   KC_NO }, \
-	{ K20, K21, K22, KC_NO, KC_NO }, \
-	{ K30, K31, K32, K33,   KC_NO }, \
-	{ K40, R0P, K42, R0N,   K44   }, \
+	{ K00,   K01, K02, K03,   KC_NO }, \
+	{ KC_NO, K11, K12, K13,   KC_NO }, \
+	{ K20,   K21, K22, KC_NO, KC_NO }, \
+	{ K30,   K31, K32, KC_NO, KC_NO }, \
+	{ K40,   R0P, ROW, K43,   K44   }, \
 }
 
