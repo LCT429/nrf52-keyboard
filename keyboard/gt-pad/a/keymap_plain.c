@@ -26,27 +26,27 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KEYMAP_ENC(
-		KC_FN0,  KC_PSLS,  KC_PAST, KC_PMNS,\
-		KC_P7,   KC_P8,    KC_P9,   KC_PPLS, \
+		KC_P6,  KC_PSLS,  KC_PAST,  KC_PMNS,\
+		         KC_P7,    KC_P8,    KC_P9,  \
 		KC_P4,   KC_P5,    KC_P6,  \
-		KC_P1,   KC_P2,    KC_P3,   KC_PENT, \
-		KC_P0,   KC_FN11, \
-		KC_VOLU, KC_VOLD,  KC_FN0 ),
+		KC_P1,   KC_P2,    KC_P3,  \
+		KC_P1,  KC_PENT,  \
+		  KC_VOLD, KC_VOLU, KC_P0 ),
 
 	KEYMAP_ENC(
-		KC_TRNS,  KC_FN1,   KC_FN2,  KC_FN3,\
-		KC_FN6,   KC_FN7,   KC_FN8,  KC_FN4, \
-		KC_MYCM,  KC_MAIL,  KC_MSEL,  \
-		KC_MPRV,  KC_MPLY,  KC_MNXT, KC_FN5, \
-		KC_BSPC,  KC_CALC, \
-		KC_FN9,  KC_FN10, KC_TRNS),
+		KC_TRNS,  KC_MYCM,   KC_MAIL,  KC_MSEL,\
+		          KC_FN7,    KC_FN8,   KC_FN9, \
+		KC_FN4,   KC_FN5,    KC_FN6,  \
+		KC_FN1,   KC_FN2,    KC_FN3,  \
+		KC_FN10,                       KC_FN11, \
+		KC_BSPC,  KC_CALC,   KC_TRNS),
 
 	KEYMAP_ENC(  //Android电视遥控器
 		KC_NO,    KC_NO,    KC_VOLU, KC_VOLD,\
-		KC_NO,    KC_UP,    KC_NO,   KC_HOME, \
+		          KC_NO,    KC_NO,   KC_HOME, \
 		KC_LEFT,  KC_ENTER, KC_RIGHT,  \
-		KC_NO,    KC_DOWN,  KC_NO,   KC_ESC, \
-		KC_APP,   KC_NO, \
+		KC_NO,    KC_NO,    KC_NO,    \
+		KC_NO,    KC_NO, \
 		KC_TRNS,  KC_TRNS,  KC_TRNS ),
 };
 
