@@ -45,26 +45,29 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 const action_t actionmaps[][MATRIX_ROWS][MATRIX_COLS] = { 
 	[0] = ACTIONMAP_ENC(
-		FN0,  PSLS,  PAST, PMNS,\
-		P7,   P8,    P9,   PPLS, \
+		P5,  PSLS,  PAST, PMNS,\
+		      P7,   P8,    P9,   \
 		P4,   P5,    P6,  \
-		P1,   P2,    P3,   PENT, \
-		P0,   FN11, \
-		VOLU, VOLD,  FN0 ),
-
+		P1,   P2,    P3,  \
+		P1,                PENT, \
+		VOLU, VOLD,  MUTE ),
+		
 	[1] = ACTIONMAP_ENC(
-		TRNS,  FN1,   FN2,  FN3,\
-		FN6,   FN7,   FN8,  FN4, \
-		MYCM,  MAIL,  MSEL,  \
-		MPRV,  MPLY,  MNXT, FN5, \
-		BSPC,  CALC, \
-		FN9,  FN10, TRNS),
+		TRNS,  MYCM,  MAIL, MSEL,\
+		      FN7,   FN8,    FN9,   \
+		FN4,   FN5,    FN6,  \
+		FN1,   FN2,    FN3,  \
+		FN10,               FN11, \
+		BSPC, CALC,  TRNS ),
 
-	[2] = ACTIONMAP_ENC(  //Android电视遥控器
-		NO,    NO,    VOLU, VOLD,\
-		NO,    UP,    NO,   HOME, \
-		LEFT,  ENTER, RIGHT,  \
-		NO,    DOWN,  NO,   ESC, \
-		APP,   NO, \
+
+	[2] = ACTIONMAP_ENC(
+		NO,   NO,  VOLD, VOLU,\
+		      NO,  NO,   HOME,   \
+		LEFT, ENTER,     RIGHT,  \
+		NO,   NO,        NO,  \
+		NO,              NO, \
 		TRNS,  TRNS,  TRNS ),
+		
+	
 };
