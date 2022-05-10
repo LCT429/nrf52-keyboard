@@ -41,8 +41,8 @@ extern const action_t fn_actions[];
 	R0P, R0N, K44\
 ) { \
 	{ K00, K01, K02, K03,   KC_NO }, \
-	{ AC_NO,    K11, 12, K13,   KC_NO }, \
-	{ K20, 21, K22, KC_NO,      AKC_NO }, \
+	{ KC_NO,    K11, 12, K13,   KC_NO }, \
+	{ K20, 21, K22, KC_NO,      KC_NO }, \
 	{ K30, K31, K32, KC_NO,      KC_NO }, \
 	{ K40, R0P, R0N, K43,   K44   }, \
 }
