@@ -40,10 +40,10 @@ extern const action_t fn_actions[];
 	K40,           K43,  \
 	R0P, R0N, K44\
 ) { \
-	{ AC_##K00, AC_##K01, AC_##K02, AC_##K03,   AC_NO }, \
-	{ AC_NO,    AC_##K11, AC_##K12, AC_##K13,   AC_NO }, \
-	{ AC_##K20, AC_##K21, AC_##K22, AC_NO,      AC_NO }, \
-	{ AC_##K30, AC_##K31, AC_##K32, AC_NO,      AC_NO }, \
-	{ AC_##K40, AC_##R0P, AC_##R0N, AC_##K43,   AC_##K44   }, \
+	{ K00, K01, K02, K03,   KC_NO }, \
+	{ AC_NO,    K11, 12, K13,   KC_NO }, \
+	{ K20, 21, K22, KC_NO,      AKC_NO }, \
+	{ K30, K31, K32, KC_NO,      KC_NO }, \
+	{ K40, R0P, R0N, K43,   K44   }, \
 }
 
