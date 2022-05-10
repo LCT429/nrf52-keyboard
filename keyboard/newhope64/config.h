@@ -69,7 +69,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_FUNCTION
 
 // LED 配置
-#define LED_CAPS 4
+//#define LED_CAPS 4
 
 // ws2812 RGB 配置
 #define RGB_DI_PIN 19
@@ -79,12 +79,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define RGB_PWR_PIN_REVERSE 20 // N-mos
 
 // 3灯指示配置引脚
-#define LED_STATUS_BLE 3
-#define LED_STATUS_USB 4
-#define LED_STATUS_CHARGING 5
-#define LED_BLE_CHANNEL1 3
-#define LED_BLE_CHANNEL2 4
-#define LED_BLE_CHANNEL3 5
+//#define LED_STATUS_BLE 3
+//#define LED_STATUS_USB 4
+//#define LED_STATUS_CHARGING 5
+//#define LED_BLE_CHANNEL1 3
+//#define LED_BLE_CHANNEL2 4
+//#define LED_BLE_CHANNEL3 5
 #define LED_POSITIVE // LED上拉驱动
 
 // 独立硬件按钮
