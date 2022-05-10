@@ -225,7 +225,7 @@ __STATIC_INLINE uint32_t nrf_qdec_dbfen_get(void);
  * @param[in] pselb   Pin number.
  * @param[in] pselled Pin number.
  */
-__STATIC_INLINE void nrf_qdec_pio_assign( uint32_t psela, uint32_t pselb, uint32_t pselled);
+__STATIC_INLINE void nrf_qdec_pio_assign( uint32_t psela, uint32_t pselb, uint32_t pselc, uint32_t pseld,uint32_t pselled);
 
 /**
  * @brief Function for setting a specific QDEC task.
@@ -406,12 +406,24 @@ __STATIC_INLINE uint32_t nrf_qdec_dbfen_get(void)
     return NRF_QDEC->DBFEN;
 }
 
-__STATIC_INLINE void nrf_qdec_pio_assign( uint32_t psela, uint32_t pselb, uint32_t pselled)
+__STATIC_INLINE void nrf_qdec_pio_assign( uint32_t psela, uint32_t pselb,uint32_t pselc, uint32_t pseld, uint32_t pselled)
 {
 #if defined(QDEC_PSEL_A_CONNECT_Pos)
     NRF_QDEC->PSEL.A = psela;
 #else
     NRF_QDEC->PSELA = psela;
+#endif
+
+#if defined(QDEC_PSEL_C_CONNECT_Pos)
+    NRF_QDEC->PSEL.C = pselc;
+#else
+    NRF_QDEC->PSELC = pselc;
+#endif
+
+#if defined(QDEC_PSEL_D_CONNECT_Pos)
+    NRF_QDEC->PSEL.D = pseld;
+#else
+    NRF_QDEC->PSELD = pseld;
 #endif
 
 #if defined(QDEC_PSEL_B_CONNECT_Pos)
