@@ -24,16 +24,9 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		         KC_P7,    KC_P8,    KC_P9,  \
 		KC_P4,   KC_P5,    KC_P6,  \
 		KC_P1,   KC_P2,    KC_P3,  \
-		KC_P1,  KC_PENT,  \
-		  KC_VOLD, KC_VOLU, KC_P0 ),
+		KC_P0,  KC_PENT,  \
+		  KC_VOLD, KC_VOLU, KC_MUTE ),
 
-	KEYMAP_ENC(
-		KC_TRNS,  KC_MYCM,   KC_MAIL,  KC_MSEL,\
-		          KC_FN7,    KC_FN8,   KC_FN9, \
-		KC_FN4,   KC_FN5,    KC_FN6,  \
-		KC_FN1,   KC_FN2,    KC_FN3,  \
-		KC_FN10,                       KC_FN11, \
-		KC_BSPC,  KC_CALC,   KC_TRNS),
 
 	
 };
