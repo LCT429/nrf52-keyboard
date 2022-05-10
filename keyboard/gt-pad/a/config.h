@@ -136,12 +136,16 @@ static const uint8_t column_pin_array[MATRIX_COLS] = {29, 26, 30, 15, 24};
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
 
 // 旋钮配置
-#define ROTARY_ENCODER_A 23,9
-#define ROTARY_ENCODER_B 22,8
+#define ROTARY_ENCODER_A 23,
+#define ROTARY_ENCODER_B 22,
+#define ROTARY_ENCODER_C 9,
+#define ROTARY_ENCODER_D 8,
 // 旋钮正向按钮映射
 #define ROTARY_ENCODER_POS 4,1
+#define ROTARY_ENCODER_POS1 2,3
 // 旋钮负向按钮映射
 #define ROTARY_ENCODER_NEG 4,2
+#define ROTARY_ENCODER_NEG1 3,3
 // 独立旋钮按键  用于关机后开机
 #define ROTARY_BUTTON 24
 // SSD1306 LCD屏幕
