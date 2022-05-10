@@ -32,7 +32,7 @@ extern const action_t fn_actions[];
 /* GH60 keymap definition macro
  * K2C, K31 and  K3C are extra keys for ISO
  */
-#define ACTIONMAP_ENC( \
+#define KEYMAP( \
 	K00, K01, K02, K03,    \
 	     K11, K12, K13,    \
 	K20, K21, K22,         \
