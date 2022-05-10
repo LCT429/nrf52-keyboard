@@ -45,11 +45,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 const action_t actionmaps[][MATRIX_ROWS][MATRIX_COLS] = { 
 	[0] = ACTIONMAP_ENC(
-		P5,  PSLS,  PAST, PMNS,\
+		FN0,  PSLS,  PAST, PMNS,\
 		      P7,   P8,    P9,   \
 		P4,   P5,    P6,  \
 		P1,   P2,    P3,  \
-		P1,                PENT, \
+		P0,                PENT, \
 		VOLU, VOLD,  MUTE ),
 		
 	[1] = ACTIONMAP_ENC(
