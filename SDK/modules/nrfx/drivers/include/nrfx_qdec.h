@@ -62,6 +62,8 @@ typedef struct
     nrf_qdec_sampleper_t sampleper;          /**< Sampling period in microseconds. */
     uint32_t             psela;              /**< Pin number for A input. */
     uint32_t             pselb;              /**< Pin number for B input. */
+	uint32_t			 pselc;
+	uint32_t			 pseld;
     uint32_t             pselled;            /**< Pin number for LED output. */
     uint32_t             ledpre;             /**< Time (in microseconds) how long LED is switched on before sampling. */
     nrf_qdec_ledpol_t    ledpol;             /**< Active LED polarity. */
@@ -77,6 +79,8 @@ typedef struct
         .sampleper          = (nrf_qdec_sampleper_t)NRFX_QDEC_CONFIG_SAMPLEPER, \
         .psela              = NRFX_QDEC_CONFIG_PIO_A,                           \
         .pselb              = NRFX_QDEC_CONFIG_PIO_B,                           \
+		.pselc              = NRFX_QDEC_CONFIG_PIO_C,                           \
+		.pseld              = NRFX_QDEC_CONFIG_PIO_D,                           \
         .pselled            = NRFX_QDEC_CONFIG_PIO_LED,                         \
         .ledpre             = NRFX_QDEC_CONFIG_LEDPRE,                          \
         .ledpol             = (nrf_qdec_ledpol_t)NRFX_QDEC_CONFIG_LEDPOL,       \
