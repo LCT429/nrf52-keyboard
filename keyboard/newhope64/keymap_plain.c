@@ -19,7 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #include "keyboard_fn.h"
 
 const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	KEYMAP_ENC(
+	KEYMAP(
 		KC_P6,  KC_PSLS,  KC_PAST,  KC_PMNS,\
 		         KC_P7,    KC_P8,    KC_P9,  \
 		KC_P4,   KC_P5,    KC_P6,  \
