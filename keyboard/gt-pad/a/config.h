@@ -136,8 +136,8 @@ static const uint8_t column_pin_array[MATRIX_COLS] = {29, 26, 30, 15, 24};
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
 
 // 旋钮配置
-#define ROTARY_ENCODER_A 23
-#define ROTARY_ENCODER_B 22
+#define ROTARY_ENCODER_A 23,9
+#define ROTARY_ENCODER_B 22,8
 // 旋钮正向按钮映射
 #define ROTARY_ENCODER_POS 4,1
 // 旋钮负向按钮映射
