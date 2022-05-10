@@ -110,6 +110,12 @@ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef PSELB
     #define PSELB       PSEL.B
 #endif
+#ifndef PSELC
+    #define PSELC       PSEL.C
+#endif
+#ifndef PSELD
+    #define PSELD      PSEL.D
+#endif
 
 
 /* SPIS */
