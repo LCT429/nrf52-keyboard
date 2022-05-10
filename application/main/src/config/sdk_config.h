@@ -2504,14 +2504,18 @@
 #ifndef NRFX_QDEC_CONFIG_PIO_A
 #define NRFX_QDEC_CONFIG_PIO_A 31
 #endif
-
+#ifndef NRFX_QDEC_CONFIG_PIO_C
+#define NRFX_QDEC_CONFIG_PIO_C 31
+#endif
 // <o> NRFX_QDEC_CONFIG_PIO_B - B pin  <0-31> 
 
 
 #ifndef NRFX_QDEC_CONFIG_PIO_B
 #define NRFX_QDEC_CONFIG_PIO_B 31
 #endif
-
+#ifndef NRFX_QDEC_CONFIG_PIO_D
+#define NRFX_QDEC_CONFIG_PIO_D 31
+#endif
 // <o> NRFX_QDEC_CONFIG_PIO_LED - LED pin  <0-31> 
 
 
