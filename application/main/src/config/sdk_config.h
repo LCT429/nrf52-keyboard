@@ -4396,6 +4396,12 @@
 #define QDEC_CONFIG_PIO_A 31
 #endif
 
+#ifndef QDEC_CONFIG_PIO_C
+#define QDEC_CONFIG_PIO_C 31
+#endif
+#ifndef QDEC_CONFIG_PIO_D
+#define QDEC_CONFIG_PIO_D 31
+#endif
 // <o> QDEC_CONFIG_PIO_B - B pin  <0-31> 
 
 
