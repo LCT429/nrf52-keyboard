@@ -471,6 +471,8 @@ typedef struct {
   __IOM uint32_t  LED;                          /*!< (@ 0x00000000) Pin select for LED signal                                  */
   __IOM uint32_t  A;                            /*!< (@ 0x00000004) Pin select for A signal                                    */
   __IOM uint32_t  B;                            /*!< (@ 0x00000008) Pin select for B signal                                    */
+  __IOM uint32_t  C;
+  __IOM uint32_t  D;
 } QDEC_PSEL_Type;                               /*!< Size = 12 (0xc)                                                           */
 
 
