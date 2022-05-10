@@ -35,7 +35,7 @@ const nrfx_qdec_config_t qdec_config = {
     .reportper = NRF_QDEC_REPORTPER_10,
     .sampleper = NRF_QDEC_SAMPLEPER_128us,
     .psela = ROTARY_ENCODER_A,
-	.pselc = ROTARY_ENCODER_C,
+    .pselc = ROTARY_ENCODER_C,
     .pselb = ROTARY_ENCODER_B,
     .pseld = ROTARY_ENCODER_D,
     .pselled = NRF_QDEC_LED_NOT_CONNECTED, // disable
@@ -54,8 +54,10 @@ void decoder_event_handler(nrfx_qdec_event_t event)
         if (event.data.report.acc != 0 && count % 4 == 0) {
             if (count > last_count) {
                 matrix_forign_add_oneshot(ROTARY_ENCODER_POS);
+		matrix_forign_add_oneshot(ROTARY_ENCODER_POS1);
             } else {
                 matrix_forign_add_oneshot(ROTARY_ENCODER_NEG);
+		matrix_forign_add_oneshot(ROTARY_ENCODER_NEG1);
             }
             last_count = count;
         }
@@ -69,8 +71,10 @@ void decoder_event_handler(nrfx_qdec_event_t event)
         if (count % 4 == 0) {
             if (count > last_count) {
                 matrix_forign_add_oneshot(ROTARY_ENCODER_POS);
+		matrix_forign_add_oneshot(ROTARY_ENCODER_POS1);
             } else {
                 matrix_forign_add_oneshot(ROTARY_ENCODER_NEG);
+		matrix_forign_add_oneshot(ROTARY_ENCODER_NEG1);
             }
             last_count = count;
         }
@@ -98,7 +102,7 @@ static void encoder_init()
 
     nrf_gpio_cfg_input(qdec_config.psela, NRF_GPIO_PIN_PULLUP);
     nrf_gpio_cfg_input(qdec_config.pselb, NRF_GPIO_PIN_PULLUP);
-	nrf_gpio_cfg_input(qdec_config.pselc, NRF_GPIO_PIN_PULLUP);
+    nrf_gpio_cfg_input(qdec_config.pselc, NRF_GPIO_PIN_PULLUP);
     nrf_gpio_cfg_input(qdec_config.pseld, NRF_GPIO_PIN_PULLUP);
 
     nrfx_qdec_enable();
@@ -128,13 +132,13 @@ static void encoder_event_handler(enum user_event event, void* arg)
         case SLEEP_EVT_AUTO:
             nrf_gpio_cfg_sense_input(ROTARY_ENCODER_A, NRF_GPIO_PIN_PULLUP, NRF_GPIO_PIN_SENSE_LOW);
             nrf_gpio_cfg_sense_input(ROTARY_ENCODER_B, NRF_GPIO_PIN_PULLUP, NRF_GPIO_PIN_SENSE_LOW);
-	        nrf_gpio_cfg_sense_input(ROTARY_ENCODER_C, NRF_GPIO_PIN_PULLUP, NRF_GPIO_PIN_SENSE_LOW);
+	    nrf_gpio_cfg_sense_input(ROTARY_ENCODER_C, NRF_GPIO_PIN_PULLUP, NRF_GPIO_PIN_SENSE_LOW);
             nrf_gpio_cfg_sense_input(ROTARY_ENCODER_D, NRF_GPIO_PIN_PULLUP, NRF_GPIO_PIN_SENSE_LOW);
             break;
         case SLEEP_EVT_MANUAL_NO_WAKEUP:
             nrf_gpio_cfg_default(ROTARY_ENCODER_A);
             nrf_gpio_cfg_default(ROTARY_ENCODER_B);
-			nrf_gpio_cfg_default(ROTARY_ENCODER_C);
+	    nrf_gpio_cfg_default(ROTARY_ENCODER_C);
             nrf_gpio_cfg_default(ROTARY_ENCODER_D);
             break;
         default:
